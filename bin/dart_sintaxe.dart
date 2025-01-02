@@ -38,12 +38,23 @@ void main() {
   };
   // print(precoMap);
 
-  dynamic numeroDecimal = 7.5;
-  print(numeroDecimal.runtimeType);
-  numeroDecimal = 'Dez virgula cinco';
-  print(numeroDecimal.runtimeType);
+  //dynamic numeroDecimal = 7.5;
+  //print(numeroDecimal.runtimeType);
+  //numeroDecimal = 'Dez virgula cinco';
+  //print(numeroDecimal.runtimeType);
+
+  Viagem Africa = Viagem();
+  Africa.printCodigoTrabalho();
 }
 
+
+class Viagem {
+  static String codigoTrabalho = "Linus25";
+
+  void printCodigoTrabalho() {
+    print("Linus25");
+  }
+}
 class Viajar {
   Transporte locomocao;
 
