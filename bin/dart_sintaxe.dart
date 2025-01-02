@@ -9,7 +9,7 @@ void main() {
     'Chapada dos Veadeiros'
   ];
 
-  print(destinos);
+  //print(destinos);
 
   Set destinosVisitados = <String> {
     'Rio de Janeiro',
@@ -17,7 +17,7 @@ void main() {
     'São Paulo',
     'Chapada dos Veadeiros',
   };
-  print(destinosVisitados);
+  //print(destinosVisitados);
 
   Set destinoDesejados = <String> {
     'Jalapão',
@@ -27,7 +27,7 @@ void main() {
     'São Paulo'
   };
 
-  print(destinoDesejados.intersection(destinosVisitados));
+  //print(destinoDesejados.intersection(destinosVisitados));
 
   Map<String, dynamic> precoMap = {
     'Jalapão': 2380.00,
@@ -36,7 +36,12 @@ void main() {
     'Chapada Diamantina': 600,
     'São Paulo': 'Barato',
   };
-  print(precoMap);
+  // print(precoMap);
+
+  dynamic numeroDecimal = 7.5;
+  print(numeroDecimal.runtimeType);
+  numeroDecimal = 'Dez virgula cinco';
+  print(numeroDecimal.runtimeType);
 }
 
 class Viajar {
