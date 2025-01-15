@@ -10,7 +10,7 @@ void main() {
   bankController.addAccount(
       id: "Ricarth",
       account:
-      Account(name: "Ricarth Lima", balance: 400, isAuthenticated: true));
+      Account(name: "Ricarth Lima", balance: 400, isAuthenticated: false));
 
   bankController.addAccount(
       id: "Kako",
@@ -20,7 +20,7 @@ void main() {
   try {
     // Fazendo transferência
     bool result = bankController.makeTransfer(
-        idSender: "Kako22", idReceiver: "Ricarth", amount: 300);
+        idSender: "Kako", idReceiver: "Ricarth", amount: 300);
 
     // Observando resultado
     if(result) {
@@ -38,6 +38,8 @@ void main() {
     print(e);
   } on SenderBalanceLowerThanAmountException catch (e) {
     print("O usuário de ID ${e.idSender} tentou enviar ${e.amount} sendo que na sua conta tem apenas ${e.senderBalance}");
+    print(e);
+  } on ReceiverNotAuthenticatedException catch(e) {
     print(e);
   } on Exception {
     print("Algo deu errado!");
