@@ -25,7 +25,7 @@ void main() async {
       TimeQuestions(usuario).timeQuestion();
     } else if (false) {
       //Basta adicionar novas perguntas aqui!
-    } else {
+    } else { 
       print(kakoBot +
           ' Não fui treinado para responder a essa pergunta \n Desculpe :( ');
       print(kakoBot + ' Você pode fazer outra pergunta ou dizer Adeus');
