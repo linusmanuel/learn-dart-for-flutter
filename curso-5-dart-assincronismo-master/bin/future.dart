@@ -23,7 +23,7 @@ void main() {
       print("The future is finally over!");
       return 404;
     }
-  }
+  } 
 
   myFutureFunc(7,4)
     .then((value) => print("My function value is: $value"));
