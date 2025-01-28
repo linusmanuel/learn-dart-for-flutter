@@ -6,7 +6,6 @@ void main() {
 
     int i = 1;
     while(i != maxCount) {
-      print("Counting: $i");
       await Future.delayed(Duration(seconds: internal));
       yield i++;
     }
